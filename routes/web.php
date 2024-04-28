@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [function () {
+    return view('tes-tailwind.index');
+}]);
+
+Route::get('/rotate', [function () {
     return view('rotate');
 }]);
+
 
 Route::get('/tailwind-test', function(){
     return view('tes-tailwind.index');
